@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Unit Converter - আয় করার সহজ টুল</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>স্মার্ট ইউনিট কনভার্টার</h1>
+        <p class="subtitle">সহজেই দৈর্ঘ্য পরিবর্তন করুন</p>
+
+        <div class="ad-placeholder">বিজ্ঞাপন এখানে দেখাবে</div>
+
+        <div class="converter-box">
+            <div class="input-group">
+                <label>পরিমাণ লিখুন:</label>
+                <input type="number" id="inputValue" placeholder="সংখ্যা লিখুন..." oninput="convert()">
+            </div>
+
+            <div class="input-group">
+                <label>থেকে:</label>
+                <select id="fromUnit" onchange="convert()">
+                    <option value="meter">মিটার</option>
+                    <option value="kilometer">কিলোমিটার</option>
+                    <option value="inch">ইঞ্চি</option>
+                    <option value="foot">ফুট</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>এ রূপান্তর করুন:</label>
+                <select id="toUnit" onchange="convert()">
+                    <option value="meter">মিটার</option>
+                    <option value="kilometer">কিলোমিটার</option>
+                    <option value="inch">ইঞ্চি</option>
+                    <option value="foot" selected>ফুট</option>
+                </select>
+            </div>
+
+            <div class="result-box">
+                <h3>ফলাফল:</h3>
+                <p id="result">০.০০</p>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            <p>© ২০২৬ আপনার টুল সাইট | ফ্রি ও দ্রুত</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
